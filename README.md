@@ -13,7 +13,7 @@
 5. edit .env file, update db user and password to yours
 6. php artisan migrate
 7. npm i
-8. npm run build
+8. npm run prod
 9. php artisan serve
 10. browse URL http://127.0.0.1:8000
 
