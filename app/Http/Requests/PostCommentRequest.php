@@ -30,7 +30,6 @@ final class PostCommentRequest extends FormRequest
             'parent_id' => 'nullable|exists:comments,id',
             'author' => 'required|max:100',
             'content' => 'required',
-            'level' => 'required|numeric|min:0|max:3a',
         ];
     }
 }

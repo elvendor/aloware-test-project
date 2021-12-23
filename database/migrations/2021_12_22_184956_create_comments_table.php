@@ -22,8 +22,7 @@ final class CreateCommentsTable extends Migration
                 $table->foreignId('post_id')->constrained('posts');
                 $table->string('author', 100);
                 $table->text('content');
-                $table->unsignedInteger('parent_id')->nullable()->index();
-                $table->unsignedSmallInteger('level')->default(0)->index();
+                $table->nestedSet();
                 $table->timestamps();
             }
         );
